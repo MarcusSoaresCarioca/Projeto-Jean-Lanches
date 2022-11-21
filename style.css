@@ -10,10 +10,12 @@
     flex-direction: column;
 }
 
+/* Header Navagation */
+
 .navcontainer{
     width: 100%;
     min-height: 40px;
-    background-color: #0d0d0d;
+    background-color: rgb(17, 17, 17);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -59,122 +61,146 @@
     gap: 10px;
 }
 
-.bemVindoTitle{
-    font-size: 26px;
-    margin-top: 20px;
-}
+/* Fim Header Navagation */
 
-.bemVindoParagrafo{
-    font-size: 20px;
-    margin:20px
-}
-
-.bemVindoCardapio{
-    font-size: 26px;
-    background-color:  rgba(255, 0, 0, 0.712);
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    
-}
-
-.sobre{
-    background-image: url(img/capa1.jpg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    height: 540px;
-}
-
-.sobreTitle{
-    color: white;
-    font-size: 32px;
-    margin: 10px;
-    margin-top: 35px;
-}
-
-.sobreCP{
-    width: 500px;
-    margin: 10px;
-    background-color: #0d0d0d56;
-    border-radius: 10px;
-}
-
-.sobreP{
-    padding: 10px;
-    color: white;
-    font-size: 20px;
-}
-
-.buttonPedido{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 25px;
-}
-
-.buttonP{
-    background-color: rgba(255, 0, 0, 0.712);
-    border: 2px solid transparent;
-    padding: 20px;
-    width: 200px;
-    border-radius: 30px;
-    color: #fff;
-    transition: 0.4s;
-}
-
-.buttonP:hover{
-    border: 2px solid white;
-}
-
-.maincontainer{
-    flex: 1 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    background-color: rgb(245, 245, 245);
-}
-
-.Cards{
-    width: 350px;
-    min-height: 40px;
-    background-color: white;
+/* Banner */
+.container1{
     display: flex;
     flex-direction: column;
+}
+
+.banner{
+   width: 100%;
+   height: 400px;
+   background: url(img/bannerjean3.png) no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+   text-align: center;
+
+}
+
+.bannerTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 110px;
+    text-shadow: black 2px 2px 10px;
+    margin-bottom: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.bannerBtn{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 25px 20px;
+    background-color: red;
+    width: 100px;
     justify-content: center;
     align-items: center;
-    margin: 15px;
-    border-radius: 20px;
-    
-}
-
-.Cards:hover{
-    border: 2px solid black;
-    margin: 15px;
-}
-
-
-.cardImg{
-    width: 200px;
-    height: 200px;
-    margin: 10px;
     border-radius: 10px;
-    border: 2px solid black;
+    text-decoration: none;
+    color: white;
+    box-shadow: black 2px 2px 10px;
+
 }
 
-.CardP{
-    font-size: 14px;
+.bannerBtn:hover{
+    background-color: #DDAA44;
+    color: black;
+    transition: all 0.3s;
+}
+
+/* Fim do Banner */
+
+/* Combos */
+
+.containerP h2{
+    text-align: center;
+    margin-top: 75px;
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: red;
+}
+
+.containerP p{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 24px;
+    color: #DDAA44;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+
+.combos{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    min-width: 150px;
+}
+
+.comboItem{
+    
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    line-height: 50px;
+    margin-bottom: 10px;
     margin: 10px;
+}
+
+.comboItem h3{
+    background: #d62a1e;
+    color: white;
+}
+
+.comboItem img{
+    width: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+
+.comboItem img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.comboItem p{
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: black;
+    text-transform: initial;
     text-align: center;
 }
 
+.comboItem h4 a{
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    line-height: 65px;
+    text-decoration: none;
+}
+
+.comboItem h4 a:hover{
+    background-color: red;
+    color: white;
+    transition: 0.8s ease;
+}
+
+/* fim combos */
+
+/* Contato */
 .EntreContato{
     font-size: 30px;
     margin: 30px;
@@ -231,3 +257,5 @@
     font-size: 15px;
     margin: 15px;
 }
+
+/* Fim do Contato */
