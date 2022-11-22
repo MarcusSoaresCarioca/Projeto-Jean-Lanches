@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-.container{
+.containerp{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
+} 
 
 /* Header Navagation */
 
@@ -116,7 +116,7 @@
 
 /* Combos */
 
-.containerP h2{
+.comboTitle{
     text-align: center;
     margin-top: 75px;
     font-size: 45px;
@@ -125,7 +125,7 @@
     color: red;
 }
 
-.containerP p{
+.comboParagrafo{
     text-align: center;
     margin-top: 25px;
     font-size: 24px;
@@ -199,6 +199,44 @@
 }
 
 /* fim combos */
+
+/* Slides */
+
+.slide{
+    margin-top:20px ;
+    flex: none;
+}
+
+.slide h3{
+    margin-top: 75px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.slide p{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    color: #DDAA44;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.itens{
+    display: flex;
+    overflow-x: auto;
+}
+
+.itens img{
+    width: 25%;
+    height: 25%;
+    margin-left: 50px;
+}
+/* Fim do slides */
 
 /* Contato */
 .EntreContato{
