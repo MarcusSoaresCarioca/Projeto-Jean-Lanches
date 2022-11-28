@@ -1,3 +1,10 @@
+:root{
+    --color-primary: rgba(182, 3, 3, 0.842);
+    --color-segundary: rgb(17, 17, 17);
+    --font-osvald: 'Oswald', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -5,7 +12,6 @@
 }
 
 .containerp{
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 } 
@@ -15,7 +21,7 @@
 .navcontainer{
     width: 100%;
     min-height: 40px;
-    background-color: rgb(17, 17, 17);
+    background-color: var(--color-segundary);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -38,7 +44,6 @@
     margin: 15px;
     text-decoration: none;
     color: #fff;
-    border: 2px solid #fff;
     border-radius: 20px;
     padding: 10px;
     cursor: pointer;
@@ -47,7 +52,6 @@
 }
 
 .button:hover{
-    border: 2px solid #DDAA44;
     color: #DDAA44;
 }
 
@@ -129,7 +133,7 @@
     text-align: center;
     margin-top: 25px;
     font-size: 24px;
-    color: #DDAA44;
+    color: var(--color-segundary);
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
 }
@@ -156,7 +160,7 @@
 }
 
 .comboItem h3{
-    background: #d62a1e;
+    background: var(--color-primary);
     color: white;
 }
 
@@ -183,7 +187,7 @@
 }
 
 .comboItem h4 a{
-    background-color: green;
+    background-color: var(--color-primary);
     border-radius: 10px;
     padding: 10px;
     color: white;
@@ -193,12 +197,47 @@
 }
 
 .comboItem h4 a:hover{
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.336);
     color: white;
     transition: 0.8s ease;
 }
 
 /* fim combos */
+
+/* Cardapio */
+
+.cardapioTitle{
+    font-size: 36px;
+    font-family: var(--font-osvald);
+    text-align: center;
+    margin-top: 75px;
+    color: var(--color-primary);
+}
+
+.Main-cardapio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: darkgray;
+    margin-top: 75px;
+}
+
+.cardapio{
+    padding: 10px;
+    margin: 10px;
+    width: 180px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.cardapio img{
+    width: 130px;
+}
+
+/* Fim do Cardapio */
 
 /* Slides */
 
@@ -220,7 +259,7 @@
 .slide p{
     font-family: 'Lato', sans-serif;
     font-size: 24px;
-    color: #DDAA44;
+    color: var(--color-segundary);
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 70px;
@@ -240,9 +279,9 @@
 
 /* Contato */
 .EntreContato{
-    font-size: 30px;
+    font-size: 36px;
     margin: 30px;
-    border-bottom: 2px solid black;
+   font-family: var(--font-osvald);
 }
 
 .ContainerMap{
@@ -296,4 +335,44 @@
     margin: 15px;
 }
 
+.pedidoWhat{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedidoWhat img{
+    width: 100%;
+    
+}
+
 /* Fim do Contato */
+
+/* fotter */
+.fotter{
+    background-color: var(--color-primary);
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotter p {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family:var(--font-lato) ;
+}
+
+.fotter a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family:var(--font-lato) ;
+}
+
+
+/* Fim do fotter */
